@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=3cm, bottom=2.8cm]{geometry}
+\usepackage[magyar]{babel}
+\usepackage{longtable}
+%\usepackage{indentfirst}
+%\usepackage{calc}
+\setlength{\parskip}{5pt plus 3pt minus 2pt}
+\frenchspacing
+
+
+\begin{document}
+\pagestyle{empty}
+\newlength{\alair}
+\settowidth{\alair}{Dr. Gribovszki Zoltán}
+\input{adat.tex}
+
+\begin{center}
+\scshape \bfseries
+  Vizsgalap
+\end{center}
+
+%Erdőfeltárási és
+\noindent Tanszék: Geomatikai és Kultúrmérnöki Intézet \\
+Tárgy neve, kódja: \targy \\
+Félév: \felev\\
+Oktató: \nev
+
+A leckekönyvek aláírás rovatát minden hallgatónál \indexalair{}-i dátummal töltöttem ki.
+   \input{jegy.tex}
+
+
+%\vspace{1cm}
+\noindent Sopron, \today{} %2006. június 15.
+
+\begin{flushright}
+\begin{minipage}{\alair}
+\centering
+\nev\\
+\beosztas\\
+\oktazon
+\end{minipage}
+\end{flushright}
+
+\end{document}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: ""
+%%% End: 
