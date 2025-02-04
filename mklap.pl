@@ -1,12 +1,4 @@
 #!/usr/bin/env perl
-## Bemeneti fájlt a standard inputról?
-# open(INFILE,"vizeskekezel.txt");
-# open(INFILE,"vizgazdismlevelezo.txt");
-# open(INFILE,"Vizgazdism2018.txt");
-# open(INFILE,"Vizeselohely2019.txt");
-# open(INFILE,"Aramlastan2019.txt");
-open(INFILE,"nmt2.txt");
-#open(OUTFILE,">prob.pl.txt");
 
 ## \nopagebreak kellene a hallgatói cellákba.
 

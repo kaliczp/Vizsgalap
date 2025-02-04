@@ -6,9 +6,10 @@ szkripttel lefordítani.
 
 #+BEGIN_SRC sh
 csin.sh kpvizeskezel.txt
+perl mklap.pl < vizesmind.txt > jegy.tex
 #+END_SRC
 
-- ~mklap.pl~ szkriptbe a fájlnevet beírni. Figyelem! Ékezet nélkül.
+- ~mklap.pl~ futtatása, mint fent, amellyel
 - ~jegy.tex~ fájlba elmenteni a stdoutot.
 - Az esetleges aláírás megtagadvát kézzel beírni.
 
