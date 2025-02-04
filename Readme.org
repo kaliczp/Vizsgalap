@@ -11,3 +11,6 @@ csin.sh kpvizeskezel.txt
 - ~mklap.pl~ szkriptbe a fájlnevet beírni. Figyelem! Ékezet nélkül.
 - ~jegy.tex~ fájlba elmenteni a stdoutot.
 - Az esetleges aláírás megtagadvát kézzel beírni.
+
+Forrás:
+https://github.com/kaliczp/Vizsgalap
