@@ -1,0 +1,13 @@
+Neptun kliens kurzus jegybeírásnál jobb gomb és export tab
+szeparált szövegfájlba. Elmenti.
+
+kp-vel kezdődő txt-t (pl. kpvizgazdism.txt) szerkeszteni. A ~csin.sh~
+szkripttel lefordítani.
+
+#+BEGIN_SRC sh
+csin.sh kpvizeskezel.txt
+#+END_SRC
+
+- ~mklap.pl~ szkriptbe a fájlnevet beírni. Figyelem! Ékezet nélkül.
+- ~jegy.tex~ fájlba elmenteni a stdoutot.
+- Az esetleges aláírás megtagadvát kézzel beírni.
