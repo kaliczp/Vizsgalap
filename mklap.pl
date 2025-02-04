@@ -52,7 +52,7 @@ while (<INFILE>){
     if(@hanyszor[$sor] > 0){
 	for($i=1; $i <= @hanyszor[$sor]; $i++){
 	    ##Jegy kiszedés
-	    @jegydate = split(/\(/,@jegydateossz[$i-1]);
+	    @jegydate = split(/\)/,@jegydateossz[$i-1]);
  	    $ttjegy = join(" & ",$ttjegy,@jegydate[0]);
 	    ##Dátum kiszedés
  	    @predate = split(/-/,@jegydate[1]);
@@ -68,13 +68,13 @@ while (<INFILE>){
 ######################################################################
 ###Jegyek szokásos formátumra alakítása!
 ######################################################################
-foreach (@jegy){
-    s/Jeles/jeles (5)/;
-    s/Jó/jó (4)/;
-    s/Közepes/közepes (3)/;
-    s/Elégséges/elégséges (2)/;
-    s/Elégtelen/elégtelen (1)/g;
-}
+# foreach (@jegy){
+#     s/Jeles/jeles (5)/;
+#     s/Jó/jó (4)/;
+#     s/Közepes/közepes (3)/;
+#     s/Elégséges/elégséges (2)/;
+#     s/Elégtelen/elégtelen (1)/g;
+# }
 
 ######################################################################
 ###Kiíratás
@@ -111,6 +111,7 @@ print "\\endlastfoot \n";
 for($i=1; $i < scalar @nev; $i++){
     print @nev[$i];
     print @jegy[$i];
+    print ")";
     #A táblázat celláinak feltöltése a legtöbb vizsgázóig
     for ( $plus = @hanyszor[$i] ; $plus < $hanyjegy; $plus++){
 	print " &";
