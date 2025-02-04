@@ -26,6 +26,8 @@ $hanyjegy = 1;
 
 while (<INFILE>){
     chomp;
+    ## Idézőjelek törlése
+    s/"//g;
     ##A tabulátorral elválasztott szöveg szétszedése
     ($ttkod, $ttveznev, $ttkernev, $nincs1, $ttertek, $ttelozo) = split(/\t/);
 ######################################################################
