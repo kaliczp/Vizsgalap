@@ -6,7 +6,7 @@ kp-vel kezdődő txt-t (pl. kpvizgazdism.txt) szerkeszteni. A ~csin.sh~
 szkripttel lefordítani.
 
 #+BEGIN_SRC sh
-csin.sh kpvizeskezel.txt
+./csin.sh kpvizeskezel.txt
 perl mklap.pl < vizesmind.txt > jegy.tex
 #+END_SRC
 
