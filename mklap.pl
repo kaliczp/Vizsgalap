@@ -16,7 +16,7 @@
 
 $hanyjegy = 1;
 
-while (<INFILE>){
+while (<>){
     chomp;
     ## Idézőjelek törlése
     s/"//g;
