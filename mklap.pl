@@ -31,6 +31,9 @@ while (<>){
     @jegydateossz = reverse(split(/,/,$ttelozo));
     ##Az első elem (Aláírva) elhagyása
     @jegydateossz = @jegydateossz[1 .. $#jegydateossz];
+    # Nincs érdemjegy kezelése
+    @jegydateossz[0] =~ s/demjegy/demjegy (-)/;
+    # A jegydarabszám ellenőrzése és szükség esetén aktualizálása
     @hanyszor[$sor] = scalar @jegydateossz;
     if($hanyjegy < @hanyszor[$sor]){
 	$hanyjegy = @hanyszor[$sor];
