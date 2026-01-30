@@ -27,6 +27,8 @@ while (<>){
     ######################################################################
     @kod[$sor] = $ttkod;
     @nev[$sor] = join(" ",$ttveznev,$ttkernev);
+    # Megtagadva kezelése
+    $ttelozo =~ s/Megtagadva/Megtagadva (-),Megtagadva (-)/;
     ##A bejegyzések sorrendjének megfordítása, dátum szerint növekednek.
     @jegydateossz = reverse(split(/,/,$ttelozo));
     ##Az első elem (Aláírva) elhagyása
